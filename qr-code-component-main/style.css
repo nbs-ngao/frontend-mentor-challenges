@@ -71,6 +71,8 @@ a:visited {
     color: var(--slate-900);
 }
 
-a {
+a:hover, a:focus {
     cursor: pointer;
+    font-weight: bold;
 }
+
