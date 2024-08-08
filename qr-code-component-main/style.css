@@ -18,17 +18,20 @@
 }
 
 body {
-    max-width: 1440px;
+    width: 100vw;
+    height: 100vh;
+    /* max-width: 1440px; */
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
     background-color: var(--slate-300);
+    border: 1px solid black;
 }
 main {
     max-width: 1440px;
     min-width: 320px;
-    width: 50%;
+    width: 20%;
     margin: 75px auto;
     display: flex;
     flex-direction: column;
@@ -47,6 +50,7 @@ h1 {
     font-weight: var(--weight-700);
     text-align: center;
     color: var(--slate-900);
+    font-size: 22px;
 }
 
 p {
@@ -62,4 +66,12 @@ p {
 a:link {
     color: var(--slate-900);
     text-decoration: none;
+}
+
+a:visited {
+    color: var(--slate-900);
+}
+
+a {
+    cursor: pointer;
 }
