@@ -63,6 +63,7 @@
     margin: 200px auto;
     font-family: var(--font-family);
     font-size: var(--paragraph-font-size);
+    min-width: 320px;
  }
 
  img {
@@ -70,6 +71,7 @@
  }
 
  main {
+
     border: 1px solid black;
     background-color: var(--col-white);
     flex-basis: 50%;
