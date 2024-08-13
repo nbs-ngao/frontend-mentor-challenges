@@ -59,8 +59,8 @@
 
  body {
     background-color: var(--col-yellow);
-    width: 30%;
-    margin: 300px auto;
+    width: 20%;
+    margin: 200px auto;
     font-family: var(--font-family);
     font-size: var(--paragraph-font-size);
  }
@@ -107,17 +107,18 @@
  }
 
  footer {
-    margin-top: 200px;
+    margin-top: 50px;
  }
 
 /***** Alternate state ****/
 
-a:hover {
+main a:hover {
     color: var(--col-yellow);
 }
 
-a {
+main a {
     cursor: pointer;
     text-decoration: none;
     color: var(--col-gray-950);
 }
+
