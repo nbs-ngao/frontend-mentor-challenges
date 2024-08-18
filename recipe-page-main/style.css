@@ -1,0 +1,164 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+/***************************/
+ :root {
+    --col-white: hsl(0, 0%, 100%);
+    --col-stone-100: hsl(30, 54%, 90%);
+    --col-stone-150: hsl(30, 18%, 87%);
+    --col-stone-600: hsl(30, 10%, 34%);
+    --col-stone-900: hsl(24, 5%, 18%);
+    --col-brown-800: hsl(14, 45%, 36%);
+    --col-rose-800: hsl(332, 51%, 32%);
+    --col-rose-50: hsl(330, 100%, 98%);
+    --paragraph-font-size: 1rem;
+    --content-font-family: "Outfit", sans-serif;
+    --title-font-family: "Young Serif", serif;
+    --font-weight-400: 400;
+    --font-weight-600: 600; 
+    --font-weight-700: 700; 
+ }
+
+ .flex-col {
+    display: flex;
+    flex-direction: column;
+ }
+
+ body {
+    background-color: var(--col-stone-100);
+    width: 60%;
+    margin: 200px auto;
+
+    gap: 50px;
+
+    font-family: var(--content-font-family);
+    font-weight: 400;
+    font-size: var(--paragraph-font-size);
+    line-height: 2;
+    color: var(--col-stone-600);
+ }
+
+ main {
+    max-width: 1440px;
+    min-width: 320px;
+    background-color: var(--col-white);
+    border-radius: 25px;
+    padding: 20px;
+
+    gap: 30px;
+ }
+
+ .hero {
+    gap: 15px;
+ }
+
+ img {
+  border-radius: 20px;
+}
+
+ h1 {
+    font-size: 2.5rem;
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    color: black;
+ }
+
+ .hero--preparation {
+    background-color: var(--col-rose-50);
+    padding: 10px;
+    border-radius: 15px;
+ }
+ 
+ h3 {
+  color: var(--col-rose-800);
+ }
+span {
+  font-weight: 600;
+}
+
+
+h2 {
+  color: var(--col-brown-800);
+  font-family: var(--title-font-family);
+  font-size: 1.8rem;
+
+  border-top: 1px solid var(--col-stone-150);
+  margin-top: 10px;
+  font-weight: 400;
+
+  padding-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid var(--col-stone-150);
+  padding: 15px 20px;
+  
+}
+td + td {
+  color: var(--col-brown-800);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+li::marker {
+  color: var(--col-brown-800);
+  font-weight: 600;
+}
+
+a {
+  cursor: pointer;
+  color: var(--col-stone-600);
+}
+
+a:hover {
+  color: var(--col-stone-900);
+}
